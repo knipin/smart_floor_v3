@@ -1,0 +1,7 @@
+defines = -DNDEBUG
+framework_dirs =
+include_dirs = -I../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_thread/public -I../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_chrono/public -I../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_preprocessor/public -I../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_polyfill/public
+target_output_name = sleep.facade
+
+
+build phony/third_party/connectedhomeip/third_party/pigweed/repo/pw_thread/sleep.facade: phony || phony/third_party/connectedhomeip/third_party/pigweed/repo/pw_chrono/system_clock

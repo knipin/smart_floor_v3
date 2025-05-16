@@ -1,0 +1,8 @@
+defines = -DNDEBUG
+framework_dirs =
+include_dirs = -I../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_sync/public -I../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_chrono/public -I../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_preprocessor/public -I../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_polyfill/public
+target_output_name = condition_variable
+
+build phony/third_party/connectedhomeip/third_party/pigweed/repo/pw_sync/condition_variable.inputdeps: phony phony/third_party/connectedhomeip/third_party/pigweed/repo/pw_chrono/system_clock.NO_BACKEND_SET phony/third_party/connectedhomeip/third_party/pigweed/repo/pw_sync/condition_variable.NO_BACKEND_SET phony/third_party/connectedhomeip/third_party/pigweed/repo/pw_sync/mutex.NO_BACKEND_SET
+
+build phony/third_party/connectedhomeip/third_party/pigweed/repo/pw_sync/condition_variable: phony || phony/third_party/connectedhomeip/third_party/pigweed/repo/pw_sync/condition_variable.NO_BACKEND_SET phony/third_party/connectedhomeip/third_party/pigweed/repo/pw_sync/condition_variable.facade phony/third_party/connectedhomeip/third_party/pigweed/repo/pw_chrono/system_clock phony/third_party/connectedhomeip/third_party/pigweed/repo/pw_sync/mutex

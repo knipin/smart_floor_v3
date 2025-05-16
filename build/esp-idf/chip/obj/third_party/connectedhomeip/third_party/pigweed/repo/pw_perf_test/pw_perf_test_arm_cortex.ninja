@@ -1,0 +1,6 @@
+defines = -DNDEBUG
+framework_dirs =
+include_dirs = -I../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_perf_test/arm_cortex_cyccnt_public_overrides -I../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_perf_test/public
+target_output_name = pw_perf_test_arm_cortex
+
+

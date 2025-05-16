@@ -1,0 +1,22 @@
+{
+  "gn_target_name": "//third_party/connectedhomeip/third_party/pigweed/repo/pw_sensor/py:py",
+  "inputs": [
+    "../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_sensor/py/pw_sensor/dependency_schema.json",
+    "../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_sensor/py/pw_sensor/metadata_schema.json",
+    "../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_sensor/py/pw_sensor/resolved_schema.json",
+    "../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_sensor/py/pw_sensor/templates/cpp_constants.jinja"
+  ],
+  "setup_sources": [
+    "../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_sensor/py/pyproject.toml",
+    "../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_sensor/py/setup.cfg"
+  ],
+  "sources": [
+    "../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_sensor/py/pw_sensor/__init__.py",
+    "../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_sensor/py/pw_sensor/constants_generator.py",
+    "../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_sensor/py/pw_sensor/sensor_desc.py",
+    "../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_sensor/py/pw_sensor/validator.py"
+  ],
+  "tests": [
+    "../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_sensor/py/validator_test.py"
+  ]
+}

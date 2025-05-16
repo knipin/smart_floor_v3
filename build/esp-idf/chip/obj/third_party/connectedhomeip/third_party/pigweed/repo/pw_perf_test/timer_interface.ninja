@@ -1,0 +1,7 @@
+defines = -DNDEBUG
+framework_dirs =
+include_dirs = -I../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_perf_test/public
+target_output_name = timer_interface
+
+
+build phony/third_party/connectedhomeip/third_party/pigweed/repo/pw_perf_test/timer_interface: phony || phony/third_party/connectedhomeip/third_party/pigweed/repo/pw_perf_test/timer_interface.NO_BACKEND_SET

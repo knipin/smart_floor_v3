@@ -1,0 +1,22 @@
+[1/12] Performing build step for 'bootloader'
+[1/1] cd /home/knipin/esp/esp-matter/examples/smart_floor_v3/build/bootloader/esp-idf/esptool_py && /home/knipin/.espressif/python_env/idf5.4_py3.10_env/bin/python /home/knipin/esp/esp-idf/components/partition_table/check_sizes.py --offset 0xc000 bootloader 0x0 /home/knipin/esp/esp-matter/examples/smart_floor_v3/build/bootloader/bootloader.bin
+Bootloader binary size 0x55f0 bytes. 0x6a10 bytes (55%) free.
+[2/10] Performing build step for 'chip_gn'
+ninja: no work to do.
+[3/8] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/app_main.cpp.obj
+[4/8] Linking C static library esp-idf/main/libmain.a
+[5/8] Generating ld/sections.ld
+warning: default on the choice symbol SEC_CERT_DAC_PROVIDER (defined at /home/knipin/esp/esp-matter/connectedhomeip/connectedhomeip/config/esp32/components/chip/Kconfig:837, /home/knipin/esp/esp-matter/components/esp_matter/Kconfig:48) will have no effect, as defaults do not affect choice symbols
+warning: the choice symbol SEC_CERT_DAC_PROVIDER (defined at /home/knipin/esp/esp-matter/connectedhomeip/connectedhomeip/config/esp32/components/chip/Kconfig:837, /home/knipin/esp/esp-matter/components/esp_matter/Kconfig:48) is defined with a prompt outside the choice
+info: INFO: Symbol SEC_CERT_DAC_PROVIDER defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/knipin/esp/esp-matter/components/esp_matter/Kconfig:48
+    /home/knipin/esp/esp-matter/connectedhomeip/connectedhomeip/config/esp32/components/chip/Kconfig:837
+[6/8] Linking CXX executable light.elf
+[7/8] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32c6 image...
+Merged 1 ELF section
+Successfully created esp32c6 image.
+Generated /home/knipin/esp/esp-matter/examples/smart_floor_v3/build/light.bin
+[8/8] cd /home/knipin/esp/esp-matter/examples/smart_floor_v3/build/esp-idf/esptool_py && /home/knipin/.espressif/python_env/idf5.4_py3.10_env/bin/python /home/knipin/esp/esp-idf/components/partition_table/check_sizes.py --offset 0xc000 partition --type app /home/knipin/esp/esp-matter/examples/smart_floor_v3/build/partition_table/partition-table.bin /home/knipin/esp/esp-matter/examples/smart_floor_v3/build/light.bin
+light.bin binary size 0x1a8a30 bytes. Smallest app partition is 0x1e0000 bytes. 0x375d0 bytes (12%) free.

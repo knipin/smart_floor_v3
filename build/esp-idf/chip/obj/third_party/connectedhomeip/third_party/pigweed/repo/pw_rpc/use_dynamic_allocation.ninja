@@ -1,0 +1,6 @@
+defines = -DNDEBUG -DPW_RPC_DYNAMIC_ALLOCATION=1
+framework_dirs =
+include_dirs =
+target_output_name = use_dynamic_allocation
+
+

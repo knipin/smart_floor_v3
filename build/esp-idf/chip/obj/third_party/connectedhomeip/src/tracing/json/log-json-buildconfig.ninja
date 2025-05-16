@@ -1,0 +1,7 @@
+defines = -DNDEBUG
+framework_dirs =
+include_dirs =
+target_output_name = log-json-buildconfig
+
+
+build phony/third_party/connectedhomeip/src/tracing/json/log-json-buildconfig: phony || phony/third_party/connectedhomeip/src/tracing/json/gen_log-json-buildconfig

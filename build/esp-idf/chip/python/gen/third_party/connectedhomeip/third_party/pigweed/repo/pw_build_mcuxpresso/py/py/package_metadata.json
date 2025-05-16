@@ -1,0 +1,26 @@
+{
+  "gn_target_name": "//third_party/connectedhomeip/third_party/pigweed/repo/pw_build_mcuxpresso/py:py",
+  "inputs": [
+
+  ],
+  "setup_sources": [
+    "../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_build_mcuxpresso/py/pyproject.toml",
+    "../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_build_mcuxpresso/py/setup.cfg"
+  ],
+  "sources": [
+    "../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_build_mcuxpresso/py/pw_build_mcuxpresso/__init__.py",
+    "../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_build_mcuxpresso/py/pw_build_mcuxpresso/__main__.py",
+    "../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_build_mcuxpresso/py/pw_build_mcuxpresso/bazel.py",
+    "../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_build_mcuxpresso/py/pw_build_mcuxpresso/common.py",
+    "../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_build_mcuxpresso/py/pw_build_mcuxpresso/components.py",
+    "../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_build_mcuxpresso/py/pw_build_mcuxpresso/consts.py",
+    "../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_build_mcuxpresso/py/pw_build_mcuxpresso/gn.py",
+    "../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_build_mcuxpresso/py/pw_build_mcuxpresso/readme_generator.py",
+    "../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_build_mcuxpresso/py/pw_build_mcuxpresso/west_wrap.py"
+  ],
+  "tests": [
+    "../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_build_mcuxpresso/py/tests/bazel_test.py",
+    "../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_build_mcuxpresso/py/tests/common_test.py",
+    "../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_build_mcuxpresso/py/tests/components_test.py"
+  ]
+}

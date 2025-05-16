@@ -1,0 +1,7 @@
+defines = -DNDEBUG
+framework_dirs =
+include_dirs = -I../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_log_tokenized/public -I../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_preprocessor/public -I../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_polyfill/public
+target_output_name = handler
+
+
+build phony/third_party/connectedhomeip/third_party/pigweed/repo/pw_log_tokenized/handler: phony || phony/third_party/connectedhomeip/third_party/pigweed/repo/pw_log_tokenized/handler.NO_BACKEND_SET

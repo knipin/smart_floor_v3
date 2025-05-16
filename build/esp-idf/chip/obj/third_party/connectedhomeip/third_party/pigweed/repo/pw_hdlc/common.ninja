@@ -1,0 +1,7 @@
+defines = -DNDEBUG -DPW_SPAN_ENABLE_ASSERTS=false
+framework_dirs =
+include_dirs = -I../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_hdlc/public -I../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_varint/public -I../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/third_party/fuchsia/repo/sdk/lib/stdcompat/include -I../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_preprocessor/public -I../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_polyfill/public -I../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_span/public
+target_output_name = common
+
+
+build phony/third_party/connectedhomeip/third_party/pigweed/repo/pw_hdlc/common: phony || phony/third_party/connectedhomeip/third_party/pigweed/repo/pw_varint/pw_varint

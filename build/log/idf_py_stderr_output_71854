@@ -1,0 +1,8 @@
+IDF_VERSION: 5.4.1; idf version number: 5.4.1
+Sequence of SDKCONFIG files: sdkconfig.defaults
+warning: default on the choice symbol SEC_CERT_DAC_PROVIDER (defined at /home/knipin/esp/esp-matter/connectedhomeip/connectedhomeip/config/esp32/components/chip/Kconfig:837, /home/knipin/esp/esp-matter/components/esp_matter/Kconfig:48) will have no effect, as defaults do not affect choice symbols
+warning: the choice symbol SEC_CERT_DAC_PROVIDER (defined at /home/knipin/esp/esp-matter/connectedhomeip/connectedhomeip/config/esp32/components/chip/Kconfig:837, /home/knipin/esp/esp-matter/components/esp_matter/Kconfig:48) is defined with a prompt outside the choice
+info: INFO: Symbol SEC_CERT_DAC_PROVIDER defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/knipin/esp/esp-matter/connectedhomeip/connectedhomeip/config/esp32/components/chip/Kconfig:837
+    /home/knipin/esp/esp-matter/components/esp_matter/Kconfig:48
+ESP Insights Project commit: 78bc8e2-dirty

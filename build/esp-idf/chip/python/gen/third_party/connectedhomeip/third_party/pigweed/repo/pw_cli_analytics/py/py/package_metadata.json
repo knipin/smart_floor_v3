@@ -1,0 +1,20 @@
+{
+  "gn_target_name": "//third_party/connectedhomeip/third_party/pigweed/repo/pw_cli_analytics/py:py",
+  "inputs": [
+
+  ],
+  "setup_sources": [
+    "../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_cli_analytics/py/pyproject.toml",
+    "../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_cli_analytics/py/setup.cfg"
+  ],
+  "sources": [
+    "../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_cli_analytics/py/pw_cli_analytics/__init__.py",
+    "../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_cli_analytics/py/pw_cli_analytics/__main__.py",
+    "../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_cli_analytics/py/pw_cli_analytics/analytics.py",
+    "../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_cli_analytics/py/pw_cli_analytics/cli.py",
+    "../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_cli_analytics/py/pw_cli_analytics/config.py"
+  ],
+  "tests": [
+    "../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_cli_analytics/py/analytics_test.py"
+  ]
+}

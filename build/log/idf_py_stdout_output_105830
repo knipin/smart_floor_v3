@@ -1,0 +1,127 @@
+[1/13] Performing build step for 'bootloader'
+[1/1] cd /home/knipin/esp/esp-matter/examples/smart_floor_v3/build/bootloader/esp-idf/esptool_py && /home/knipin/.espressif/python_env/idf5.4_py3.10_env/bin/python /home/knipin/esp/esp-idf/components/partition_table/check_sizes.py --offset 0xc000 bootloader 0x0 /home/knipin/esp/esp-matter/examples/smart_floor_v3/build/bootloader/bootloader.bin
+Bootloader binary size 0x55f0 bytes. 0x6a10 bytes (55%) free.
+[2/11] Performing build step for 'chip_gn'
+ninja: no work to do.
+[3/9] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/app_main.cpp.obj
+[4/9] Linking C static library esp-idf/main/libmain.a
+[5/9] Generating ld/sections.ld
+warning: default on the choice symbol SEC_CERT_DAC_PROVIDER (defined at /home/knipin/esp/esp-matter/connectedhomeip/connectedhomeip/config/esp32/components/chip/Kconfig:837, /home/knipin/esp/esp-matter/components/esp_matter/Kconfig:48) will have no effect, as defaults do not affect choice symbols
+warning: the choice symbol SEC_CERT_DAC_PROVIDER (defined at /home/knipin/esp/esp-matter/connectedhomeip/connectedhomeip/config/esp32/components/chip/Kconfig:837, /home/knipin/esp/esp-matter/components/esp_matter/Kconfig:48) is defined with a prompt outside the choice
+info: INFO: Symbol SEC_CERT_DAC_PROVIDER defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/knipin/esp/esp-matter/components/esp_matter/Kconfig:48
+    /home/knipin/esp/esp-matter/connectedhomeip/connectedhomeip/config/esp32/components/chip/Kconfig:837
+[6/9] Linking CXX executable light.elf
+[7/9] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32c6 image...
+Merged 1 ELF section
+Successfully created esp32c6 image.
+Generated /home/knipin/esp/esp-matter/examples/smart_floor_v3/build/light.bin
+[8/9] cd /home/knipin/esp/esp-matter/examples/smart_floor_v3/build/esp-idf/esptool_py && /home/knipin/.espressif/python_env/idf5.4_py3.10_env/bin/python /home/knipin/esp/esp-idf/components/partition_table/check_sizes.py --offset 0xc000 partition --type app /home/knipin/esp/esp-matter/examples/smart_floor_v3/build/partition_table/partition-table.bin /home/knipin/esp/esp-matter/examples/smart_floor_v3/build/light.bin
+light.bin binary size 0x1a8b20 bytes. Smallest app partition is 0x1e0000 bytes. 0x374e0 bytes (12%) free.
+[8/9] cd /home/knipin/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/knipin/esp/esp-idf -D "SERIAL_TOOL=/home/knipin/.espressif/python_env/idf5.4_py3.10_env/bin/python;;/home/knipin/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32c6" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/knipin/esp/esp-matter/examples/smart_floor_v3/build -P /home/knipin/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32c6 -p /dev/ttyACM0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 4MB 0x0 bootloader/bootloader.bin 0x20000 light.bin 0xc000 partition_table/partition-table.bin 0x1d000 ota_data_initial.bin
+esptool.py v4.8.1
+Serial port /dev/ttyACM0
+Connecting...
+Chip is ESP32-C6 (QFN40) (revision v0.1)
+Features: WiFi 6, BT 5, IEEE802.15.4
+Crystal is 40MHz
+MAC: f0:f5:bd:ff:fe:10:29:1c
+BASE MAC: f0:f5:bd:10:29:1c
+MAC_EXT: ff:fe
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00020000 to 0x001c8fff...
+Flash will be erased from 0x0000c000 to 0x0000cfff...
+Flash will be erased from 0x0001d000 to 0x0001efff...
+SHA digest in image updated
+Compressed 22000 bytes to 13587...
+Writing at 0x00000000... (100 %)
+Wrote 22000 bytes (13587 compressed) at 0x00000000 in 0.5 seconds (effective 336.4 kbit/s)...
+Hash of data verified.
+Compressed 1739552 bytes to 1056871...
+Writing at 0x00020000... (1 %)
+Writing at 0x0002c977... (3 %)
+Writing at 0x00039868... (4 %)
+Writing at 0x00046117... (6 %)
+Writing at 0x0004f157... (7 %)
+Writing at 0x00057c4d... (9 %)
+Writing at 0x0005fed7... (10 %)
+Writing at 0x000664d6... (12 %)
+Writing at 0x0006ce60... (13 %)
+Writing at 0x00074147... (15 %)
+Writing at 0x00079f2a... (16 %)
+Writing at 0x0008001a... (18 %)
+Writing at 0x000879ad... (20 %)
+Writing at 0x0008db6f... (21 %)
+Writing at 0x00093c7d... (23 %)
+Writing at 0x00099fed... (24 %)
+Writing at 0x0009fdc2... (26 %)
+Writing at 0x000a6877... (27 %)
+Writing at 0x000ac45c... (29 %)
+Writing at 0x000b2810... (30 %)
+Writing at 0x000b8a49... (32 %)
+Writing at 0x000be500... (33 %)
+Writing at 0x000c5152... (35 %)
+Writing at 0x000cb505... (36 %)
+Writing at 0x000d246e... (38 %)
+Writing at 0x000d7fb4... (40 %)
+Writing at 0x000de208... (41 %)
+Writing at 0x000e477c... (43 %)
+Writing at 0x000eb14a... (44 %)
+Writing at 0x000f10db... (46 %)
+Writing at 0x000f7179... (47 %)
+Writing at 0x000fd514... (49 %)
+Writing at 0x001035f7... (50 %)
+Writing at 0x001096a6... (52 %)
+Writing at 0x0010fa9c... (53 %)
+Writing at 0x00115d6e... (55 %)
+Writing at 0x0011bca2... (56 %)
+Writing at 0x00121dbe... (58 %)
+Writing at 0x001284c7... (60 %)
+Writing at 0x0012eb2d... (61 %)
+Writing at 0x00134f88... (63 %)
+Writing at 0x0013b26f... (64 %)
+Writing at 0x00141432... (66 %)
+Writing at 0x00147491... (67 %)
+Writing at 0x0014d4c4... (69 %)
+Writing at 0x00152f41... (70 %)
+Writing at 0x00158f17... (72 %)
+Writing at 0x0015edb3... (73 %)
+Writing at 0x00164aaa... (75 %)
+Writing at 0x0016ab32... (76 %)
+Writing at 0x00171231... (78 %)
+Writing at 0x001775c2... (80 %)
+Writing at 0x0017d2d5... (81 %)
+Writing at 0x001831a8... (83 %)
+Writing at 0x001893e4... (84 %)
+Writing at 0x0018f272... (86 %)
+Writing at 0x001948a2... (87 %)
+Writing at 0x0019a47f... (89 %)
+Writing at 0x001a02ac... (90 %)
+Writing at 0x001a5eee... (92 %)
+Writing at 0x001abea9... (93 %)
+Writing at 0x001b1bbd... (95 %)
+Writing at 0x001b8035... (96 %)
+Writing at 0x001bd83c... (98 %)
+Writing at 0x001c36e4... (100 %)
+Wrote 1739552 bytes (1056871 compressed) at 0x00020000 in 12.2 seconds (effective 1137.2 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 181...
+Writing at 0x0000c000... (100 %)
+Wrote 3072 bytes (181 compressed) at 0x0000c000 in 0.1 seconds (effective 303.8 kbit/s)...
+Hash of data verified.
+Compressed 8192 bytes to 31...
+Writing at 0x0001d000... (100 %)
+Wrote 8192 bytes (31 compressed) at 0x0001d000 in 0.1 seconds (effective 459.2 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

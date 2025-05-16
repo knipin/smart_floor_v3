@@ -1,0 +1,6 @@
+defines = -DNDEBUG -DPW_STRING_ENABLE_DECIMAL_FLOAT_EXPANSION=1
+framework_dirs =
+include_dirs =
+target_output_name = enable_decimal_float_expansion
+
+

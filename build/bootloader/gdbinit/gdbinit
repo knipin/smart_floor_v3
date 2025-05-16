@@ -1,0 +1,2 @@
+source /home/knipin/esp/esp-matter/examples/smart_floor_v3/build/bootloader/gdbinit/symbols
+source /home/knipin/esp/esp-matter/examples/smart_floor_v3/build/bootloader/gdbinit/connect

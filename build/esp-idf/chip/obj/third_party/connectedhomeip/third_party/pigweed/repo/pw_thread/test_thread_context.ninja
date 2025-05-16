@@ -1,0 +1,7 @@
+defines = -DNDEBUG
+framework_dirs =
+include_dirs = -I../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_thread/public
+target_output_name = test_thread_context
+
+
+build phony/third_party/connectedhomeip/third_party/pigweed/repo/pw_thread/test_thread_context: phony || phony/third_party/connectedhomeip/third_party/pigweed/repo/pw_thread/test_thread_context.NO_BACKEND_SET

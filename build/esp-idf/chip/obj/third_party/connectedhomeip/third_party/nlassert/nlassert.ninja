@@ -1,0 +1,6 @@
+defines = -DNDEBUG
+framework_dirs =
+include_dirs = -I../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/nlassert/repo/include
+target_output_name = nlassert
+
+

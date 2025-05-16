@@ -1,0 +1,6 @@
+defines = -DNDEBUG
+framework_dirs =
+include_dirs =
+target_output_name = arm_builtins_armv7m
+
+

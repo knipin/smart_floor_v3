@@ -1,0 +1,752 @@
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x15 (USB_UART_HPSYS),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4001a378
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875720,len:0x16b8
+load:0x4086c110,len:0xe84
+load:0x4086e610,len:0x3054
+entry 0x4086c11a
+[0;32mI (23) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (23) boot: compile time May 14 2025 18:25:58[0m
+[0;32mI (24) boot: chip revision: v0.1[0m
+[0;32mI (24) boot: efuse block revision: v0.3[0m
+[0;32mI (26) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (30) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (34) boot.esp32c6: SPI Flash Size : 4MB[0m
+[0;32mI (38) boot: Enabling RNG early entropy source...[0m
+[0;32mI (42) boot: Partition Table:[0m
+[0;32mI (45) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (51) boot:  0 esp_secure_cert  unknown          3f 06 0000d000 00002000[0m
+[0;32mI (58) boot:  1 nvs              WiFi data        01 02 00010000 0000c000[0m
+[0;32mI (64) boot:  2 nvs_keys         NVS keys         01 04 0001c000 00001000[0m
+[0;32mI (71) boot:  3 otadata          OTA data         01 00 0001d000 00002000[0m
+[0;32mI (77) boot:  4 phy_init         RF data          01 01 0001f000 00001000[0m
+[0;32mI (84) boot:  5 ota_0            OTA app          00 10 00020000 001e0000[0m
+[0;32mI (90) boot:  6 ota_1            OTA app          00 11 00200000 001e0000[0m
+[0;32mI (97) boot:  7 fctry            WiFi data        01 02 003e0000 00006000[0m
+[0;32mI (103) boot: End of partition table[0m
+[0;32mI (107) boot: No factory image, trying OTA 0[0m
+[0;32mI (111) esp_image: segment 0: paddr=00020020 vaddr=42150020 size=3c0b4h (245940) map[0m
+[0;32mI (164) esp_image: segment 1: paddr=0005c0dc vaddr=40800000 size=03f3ch ( 16188) load[0m
+[0;32mI (168) esp_image: segment 2: paddr=00060020 vaddr=42000020 size=149124h (1347876) map[0m
+[0;32mI (417) esp_image: segment 3: paddr=001a914c vaddr=40803f3c size=1b3f8h (111608) load[0m
+[0;32mI (441) esp_image: segment 4: paddr=001c454c vaddr=4081f340 size=0449ch ( 17564) load[0m
+[0;32mI (446) esp_image: segment 5: paddr=001c89f0 vaddr=50000000 size=0001ch (    28) load[0m
+[0;32mI (454) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (512) boot: Set actual ota_seq=1 in otadata[0][0m
+[0;32mI (512) boot: Disabling RNG early entropy source...[0m
+[0;32mI (521) cpu_start: Unicore app[0m
+[0;32mI (530) cpu_start: Pro cpu start user code[0m
+[0;32mI (530) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (530) app_init: Application information:[0m
+[0;32mI (530) app_init: Project name:     light[0m
+[0;32mI (534) app_init: App version:      1.0[0m
+[0;32mI (537) app_init: Compile time:     May 14 2025 18:25:45[0m
+[0;32mI (542) app_init: ELF file SHA256:  658ee126f...[0m
+[0;32mI (546) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (550) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (554) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (558) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (562) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (568) heap_init: At 40837370 len 000452A0 (276 KiB): RAM[0m
+[0;32mI (573) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (578) heap_init: At 5000001C len 00003FCC (15 KiB): RTCRAM[0m
+[0;32mI (585) spi_flash: detected chip: generic[0m
+[0;32mI (588) spi_flash: flash io: dio[0m
+[0;33mW (591) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;33mW (603) rmt(legacy): legacy driver is deprecated, please migrate to `driver/rmt_tx.h` and/or `driver/rmt_rx.h`[0m
+[0;32mI (614) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (619) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (625) coexist: coex firmware version: e727207[0m
+[0;32mI (630) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (634) main_task: Started on CPU0[0m
+[0;32mI (634) main_task: Calling app_main()[0m
+[0;32mI (654) gpio: GPIO[0]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (654) temp_sensor: ADC calibration enabled[0m
+[0;32mI (664) temp_ctrl: T=309.51°C → power=0.0% (target=30.0)[0m
+[0;32mI (664) led_driver_ws2812: Initializing light driver[0m
+[0;32mI (674) gpio: GPIO[9]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (674) button: IoT Button Version: 4.1.3[0m
+[0;32mI (684) app_main: Light created with endpoint_id 1[0m
+[0;32mI (684) pp: pp rom version: 5b8dcfa[0m
+[0;32mI (694) net80211: net80211 rom version: 5b8dcfa[0m
+[0;32mI (704) wifi:wifi driver task: 408451ac, prio:23, stack:6656, core=0[0m
+[0;32mI (704) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (704) wifi:wifi certification version: v7.0[0m
+[0;32mI (704) wifi:config NVS flash: enabled[0m
+[0;32mI (714) wifi:config nano formatting: disabled[0m
+[0;32mI (714) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band mode:0x1[0m
+[0;32mI (724) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (724) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (734) wifi:Init management short buffer num: 32[0m
+[0;32mI (734) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (734) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (744) wifi:Init static rx buffer size: 1700 (rxctrl:92, csi:512)[0m
+[0;32mI (754) wifi:Init static rx buffer num: 10[0m
+[0;32mI (754) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (754) wifi_init: rx ba win: 6[0m
+[0;32mI (764) wifi_init: accept mbox: 6[0m
+[0;32mI (764) wifi_init: tcpip mbox: 32[0m
+[0;32mI (764) wifi_init: udp mbox: 6[0m
+[0;32mI (764) wifi_init: tcp mbox: 6[0m
+[0;32mI (774) wifi_init: tcp tx win: 5760[0m
+[0;32mI (774) wifi_init: tcp rx win: 5760[0m
+[0;32mI (774) wifi_init: tcp mss: 1440[0m
+[0;32mI (784) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (784) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (784) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (814) chip[DL]: NVS set: chip-counters/reboot-count = 1926 (0x786)[0m
+[0;32mI (814) chip[DL]: Real time clock set to 946684800 (2000-01-01 00:00:00 UTC)[0m
+[0;32mI (814) BLE_INIT: Using main XTAL as clock source[0m
+[0;32mI (814) BLE_INIT: ble controller commit:[c0eafd3][0m
+[0;32mI (824) BLE_INIT: Bluetooth MAC: f0:f5:bd:10:29:1e[0m
+[0;32mI (824) phy_init: phy_version 330,4af1121,Feb  6 2025,14:39:13[0m
+[0;32mI (914) phy: libbtbb version: 99f6adc, Feb  6 2025, 14:39:27[0m
+[0;32mI (924) NimBLE: GAP procedure initiated: stop advertising.[0m
+
+[0;32mI (924) CHIP[DL]: BLE host-controller synced[0m
+[0;32mI (1424) chip[DL]: Starting ESP WiFi layer[0m
+[0;33mW (1424) wifi:ACK_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (1424) wifi:CTS_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (1424) wifi:(agc)0x600a7128:0xd2006a0c, min.avgNF:0xce->0xd2(dB), RCalCount:0x6, min.RRssi:0xa0c(-95.25)[0m
+[0;33mW (1434) wifi:(TB)WDEV_PWR_TB_MCS0:19[0m
+[0;33mW (1444) wifi:(TB)WDEV_PWR_TB_MCS1:19[0m
+[0;33mW (1444) wifi:(TB)WDEV_PWR_TB_MCS2:19[0m
+[0;33mW (1444) wifi:(TB)WDEV_PWR_TB_MCS3:19[0m
+[0;33mW (1454) wifi:(TB)WDEV_PWR_TB_MCS4:19[0m
+[0;33mW (1454) wifi:(TB)WDEV_PWR_TB_MCS5:19[0m
+[0;33mW (1454) wifi:(TB)WDEV_PWR_TB_MCS6:18[0m
+[0;33mW (1464) wifi:(TB)WDEV_PWR_TB_MCS7:18[0m
+[0;33mW (1464) wifi:(TB)WDEV_PWR_TB_MCS8:17[0m
+[0;33mW (1464) wifi:(TB)WDEV_PWR_TB_MCS9:15[0m
+[0;33mW (1474) wifi:(TB)WDEV_PWR_TB_MCS10:15[0m
+[0;33mW (1474) wifi:(TB)WDEV_PWR_TB_MCS11:15[0m
+[0;32mI (1474) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;32mI (1484) wifi:mode : sta (f0:f5:bd:10:29:1c)[0m
+[0;32mI (1494) wifi:enable tsf[0m
+[0;32mI (1494) chip[DL]: Posting ESPSystemEvent: Wifi Event with eventId : 43[0m
+[0;33mW (1494) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (1504) chip[DL]: Attempting to connect WiFi station interface[0m
+[0;32mI (1514) chip[DL]: WiFi station state change: NotConnected -> Connecting[0m
+[0;33mW (1514) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (1514) chip[DL]: Posting ESPSystemEvent: Wifi Event with eventId : 2[0m
+[1;31mE (1524) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (1534) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;32mI (1544) chip[SVR]: Initializing subscription resumption storage...[0m
+[0;32mI (1544) chip[SVR]: Server initializing...[0m
+[0;32mI (1554) chip[TS]: Last Known Good Time: 2023-10-14T01:16:48[0m
+[0;32mI (1564) chip[FP]: Fabric index 0x1 was retrieved from storage. Compressed FabricId 0x6A683EF473B4D4CD, FabricId 0x0000000000000001, NodeId 0x0000000000000101, VendorId 0x132F[0m
+[0;32mI (1574) chip[DMG]: AccessControl: initializing[0m
+[0;32mI (1574) chip[DMG]: Examples::AccessControlDelegate::Init[0m
+[0;32mI (1584) chip[DMG]: AccessControl: setting[0m
+[0;32mI (1584) chip[DMG]: DefaultAclStorage: initializing[0m
+[0;32mI (1594) chip[DMG]: DefaultAclStorage: 1 entries loaded[0m
+[0;32mI (1594) chip[SVR]: WARNING: mTestEventTriggerDelegate is null[0m
+[0;32mI (1624) chip[ZCL]: Using ZAP configuration...[0m
+[0;32mI (1624) esp_matter_cluster: Cluster plugin init common callback[0m
+[0;32mI (1624) chip[DMG]: AccessControlCluster: initializing[0m
+[0;32mI (1634) chip[ZCL]: WRITE ERR: ep 0 clus 0x0000_0030 attr 0x0000_0000 not supported[0m
+[0;32mI (1634) chip[ZCL]: Initiating Admin Commissioning cluster.[0m
+[0;32mI (1644) chip[SVR]: Fabric already commissioned. Disabling BLE advertisement[0m
+[0;32mI (1654) chip[IN]: CASE Server enabling CASE session setups[0m
+[0;32mI (1654) chip[SVR]: Joining Multicast groups[0m
+[0;32mI (1664) chip[SVR]: Server Listening...[0m
+[0;32mI (1664) esp_matter_core: Dynamic endpoint 0 added[0m
+[0;32mI (1664) esp_matter_attribute: ********** R : Endpoint 0x0001's Cluster 0x00000003's Attribute 0x00000001 is 1 **********[0m
+[0;32mI (1674) esp_matter_attribute: ********** R : Endpoint 0x0001's Cluster 0x00000004's Attribute 0x00000000 is 128 **********[0m
+[0;32mI (1694) esp_matter_attribute: ********** R : Endpoint 0x0001's Cluster 0x00000004's Attribute 0x0000FFFC is 1 **********[0m
+[0;32mI (1704) esp_matter_attribute: ********** R : Endpoint 0x0001's Cluster 0x00000006's Attribute 0x0000FFFC is 1 **********[0m
+[0;32mI (1714) esp_matter_attribute: ********** R : Endpoint 0x0001's Cluster 0x00000006's Attribute 0x00004003 is null **********[0m
+[0;32mI (1724) esp_matter_attribute: ********** R : Endpoint 0x0001's Cluster 0x00000006's Attribute 0x00000000 is 0 **********[0m
+[0;32mI (1734) esp_matter_attribute: ********** R : Endpoint 0x0001's Cluster 0x00000006's Attribute 0x00000000 is 0 **********[0m
+[0;32mI (1744) chip[ZCL]: Endpoint 1 On/off already set to new value[0m
+[0;32mI (1744) esp_matter_attribute: ********** R : Endpoint 0x0001's Cluster 0x00000008's Attribute 0x00000002 is 1 **********[0m
+[0;32mI (1764) esp_matter_attribute: ********** R : Endpoint 0x0001's Cluster 0x00000008's Attribute 0x00000003 is 254 **********[0m
+[0;32mI (1774) esp_matter_attribute: ********** R : Endpoint 0x0001's Cluster 0x00000008's Attribute 0x0000FFFC is 3 **********[0m
+[0;32mI (1784) esp_matter_attribute: ********** R : Endpoint 0x0001's Cluster 0x00000008's Attribute 0x00000000 is 64 **********[0m
+[0;32mI (1794) esp_matter_attribute: ********** R : Endpoint 0x0001's Cluster 0x00000008's Attribute 0x00004000 is 64 **********[0m
+[0;32mI (1804) esp_matter_attribute: ********** R : Endpoint 0x0001's Cluster 0x00000008's Attribute 0x00000000 is 64 **********[0m
+[0;32mI (1814) esp_matter_attribute: ********** R : Endpoint 0x0001's Cluster 0x00000300's Attribute 0x00004010 is null **********[0m
+[0;32mI (1824) esp_matter_core: Dynamic endpoint 1 added[0m
+[0;32mI (1834) chip[DL]: WIFI_EVENT_STA_START[0m
+[0;33mW (1834) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (1834) chip[DL]: Attempting to connect WiFi station interface[0m
+[1;31mE (1844) wifi:sta is connecting, return error[0m
+[1;31mE (1844) chip[DL]: esp_wifi_connect() failed: ESP_ERR_WIFI_CONN[0m
+[0;32mI (1854) NimBLE: GAP procedure initiated: stop advertising.[0m
+
+[0;32mI (1864) temp_ctrl: T=309.53°C → power=0.0% (target=30.0)[0m
+[5n> I (2374) main_task: Returned from app_main()
+[0;32mI (2864) temp_ctrl: T=309.51°C → power=0.0% (target=30.0)[0m
+[0;32mI (3864) temp_ctrl: T=309.51°C → power=0.0% (target=30.0)[0m
+[0;32mI (3864) chip[DL]: BLE deinit successful and memory reclaimed[0m
+[0;32mI (3864) app_main: BLE deinitialized and memory reclaimed[0m
+[0;32mI (3914) chip[DL]: Posting ESPSystemEvent: Wifi Event with eventId : 5[0m
+[0;32mI (3914) chip[DL]: WIFI_EVENT_STA_DISCONNECTED[0m
+[0;32mI (3914) chip[DL]: WiFi station state change: Connecting -> Connecting_Failed[0m
+[0;33mW (3934) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (3934) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;33mW (3944) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (3944) chip[DL]: WiFi station state change: Connecting_Failed -> NotConnected[0m
+[0;33mW (3954) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (3954) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (3964) chip[DL]: Next WiFi station reconnect in 100 ms[0m
+[0;32mI (3974) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;33mW (4074) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (4074) chip[DL]: Attempting to connect WiFi station interface[0m
+[0;32mI (4074) chip[DL]: WiFi station state change: NotConnected -> Connecting[0m
+[0;33mW (4094) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (4094) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (4104) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;32mI (4864) temp_ctrl: T=309.51°C → power=0.0% (target=30.0)[0m
+[0;32mI (5864) temp_ctrl: T=309.51°C → power=0.0% (target=30.0)[0m
+[0;32mI (6484) chip[DL]: Posting ESPSystemEvent: Wifi Event with eventId : 5[0m
+[0;32mI (6484) chip[DL]: WIFI_EVENT_STA_DISCONNECTED[0m
+[0;32mI (6484) chip[DL]: WiFi station state change: Connecting -> Connecting_Failed[0m
+[0;33mW (6494) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (6494) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;33mW (6514) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (6514) chip[DL]: WiFi station state change: Connecting_Failed -> NotConnected[0m
+[0;33mW (6524) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (6524) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (6534) chip[DL]: Next WiFi station reconnect in 100 ms[0m
+[0;32mI (6544) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;33mW (6644) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (6644) chip[DL]: Attempting to connect WiFi station interface[0m
+[0;32mI (6644) chip[DL]: WiFi station state change: NotConnected -> Connecting[0m
+[0;33mW (6654) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (6654) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (6674) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;32mI (6864) temp_ctrl: T=309.53°C → power=0.0% (target=30.0)[0m
+[0;32mI (7864) temp_ctrl: T=309.51°C → power=0.0% (target=30.0)[0m
+[0;32mI (8864) temp_ctrl: T=309.51°C → power=0.0% (target=30.0)[0m
+[0;32mI (9054) chip[DL]: Posting ESPSystemEvent: Wifi Event with eventId : 5[0m
+[0;32mI (9054) chip[DL]: WIFI_EVENT_STA_DISCONNECTED[0m
+[0;32mI (9054) chip[DL]: WiFi station state change: Connecting -> Connecting_Failed[0m
+[0;33mW (9064) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (9064) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;33mW (9074) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (9074) chip[DL]: WiFi station state change: Connecting_Failed -> NotConnected[0m
+[0;33mW (9094) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (9094) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (9104) chip[DL]: Next WiFi station reconnect in 100 ms[0m
+[0;32mI (9114) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;33mW (9214) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (9214) chip[DL]: Attempting to connect WiFi station interface[0m
+[0;32mI (9214) chip[DL]: WiFi station state change: NotConnected -> Connecting[0m
+[0;33mW (9224) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (9224) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (9234) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;32mI (9864) temp_ctrl: T=309.13°C → power=0.0% (target=30.0)[0m
+[0;32mI (10864) temp_ctrl: T=309.51°C → power=0.0% (target=30.0)[0m
+[0;32mI (11624) chip[DL]: Posting ESPSystemEvent: Wifi Event with eventId : 5[0m
+[0;32mI (11624) chip[DL]: WIFI_EVENT_STA_DISCONNECTED[0m
+[0;32mI (11624) chip[DL]: WiFi station state change: Connecting -> Connecting_Failed[0m
+[0;33mW (11634) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (11634) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;33mW (11644) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (11644) chip[DL]: WiFi station state change: Connecting_Failed -> NotConnected[0m
+[0;33mW (11654) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (11664) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (11674) chip[DL]: Next WiFi station reconnect in 100 ms[0m
+[0;32mI (11684) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;33mW (11784) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (11784) chip[DL]: Attempting to connect WiFi station interface[0m
+[0;32mI (11784) chip[DL]: WiFi station state change: NotConnected -> Connecting[0m
+[0;33mW (11794) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (11794) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (11804) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;32mI (11864) temp_ctrl: T=309.53°C → power=0.0% (target=30.0)[0m
+[0;32mI (12864) temp_ctrl: T=309.51°C → power=0.0% (target=30.0)[0m
+[0;32mI (13864) temp_ctrl: T=309.53°C → power=0.0% (target=30.0)[0m
+[0;32mI (14184) chip[DL]: Posting ESPSystemEvent: Wifi Event with eventId : 5[0m
+[0;32mI (14194) chip[DL]: WIFI_EVENT_STA_DISCONNECTED[0m
+[0;32mI (14194) chip[DL]: WiFi station state change: Connecting -> Connecting_Failed[0m
+[0;33mW (14204) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (14204) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;33mW (14214) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (14214) chip[DL]: WiFi station state change: Connecting_Failed -> NotConnected[0m
+[0;33mW (14224) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (14234) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (14234) chip[DL]: Next WiFi station reconnect in 100 ms[0m
+[0;32mI (14244) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;33mW (14344) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (14344) chip[DL]: Attempting to connect WiFi station interface[0m
+[0;32mI (14354) chip[DL]: WiFi station state change: NotConnected -> Connecting[0m
+[0;33mW (14364) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (14364) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (14374) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;32mI (14864) temp_ctrl: T=309.53°C → power=0.0% (target=30.0)[0m
+[0;32mI (15864) temp_ctrl: T=309.51°C → power=0.0% (target=30.0)[0m
+[0;32mI (16754) chip[DL]: Posting ESPSystemEvent: Wifi Event with eventId : 5[0m
+[0;32mI (16754) chip[DL]: WIFI_EVENT_STA_DISCONNECTED[0m
+[0;32mI (16754) chip[DL]: WiFi station state change: Connecting -> Connecting_Failed[0m
+[0;33mW (16764) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (16774) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;33mW (16784) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (16794) chip[DL]: WiFi station state change: Connecting_Failed -> NotConnected[0m
+[0;33mW (16794) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (16804) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (16804) chip[DL]: Next WiFi station reconnect in 100 ms[0m
+[0;32mI (16814) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;32mI (16864) temp_ctrl: T=309.13°C → power=0.0% (target=30.0)[0m
+[0;33mW (16914) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (16914) chip[DL]: Attempting to connect WiFi station interface[0m
+[0;32mI (16914) chip[DL]: WiFi station state change: NotConnected -> Connecting[0m
+[0;33mW (16934) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (16934) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (16944) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;32mI (17864) temp_ctrl: T=309.51°C → power=0.0% (target=30.0)[0m
+[0;32mI (18864) temp_ctrl: T=309.10°C → power=0.0% (target=30.0)[0m
+[0;32mI (19324) chip[DL]: Posting ESPSystemEvent: Wifi Event with eventId : 5[0m
+[0;32mI (19324) chip[DL]: WIFI_EVENT_STA_DISCONNECTED[0m
+[0;32mI (19324) chip[DL]: WiFi station state change: Connecting -> Connecting_Failed[0m
+[0;33mW (19334) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (19334) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;33mW (19354) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (19354) chip[DL]: WiFi station state change: Connecting_Failed -> NotConnected[0m
+[0;33mW (19364) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (19374) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (19374) chip[DL]: Next WiFi station reconnect in 100 ms[0m
+[0;32mI (19384) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;33mW (19484) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (19484) chip[DL]: Attempting to connect WiFi station interface[0m
+[0;32mI (19484) chip[DL]: WiFi station state change: NotConnected -> Connecting[0m
+[0;33mW (19494) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (19494) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (19514) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;32mI (19864) temp_ctrl: T=309.10°C → power=0.0% (target=30.0)[0m
+[0;32mI (20864) temp_ctrl: T=309.10°C → power=0.0% (target=30.0)[0m
+[0;32mI (21864) temp_ctrl: T=309.10°C → power=0.0% (target=30.0)[0m
+[0;32mI (21894) chip[DL]: Posting ESPSystemEvent: Wifi Event with eventId : 5[0m
+[0;32mI (21894) chip[DL]: WIFI_EVENT_STA_DISCONNECTED[0m
+[0;32mI (21894) chip[DL]: WiFi station state change: Connecting -> Connecting_Failed[0m
+[0;33mW (21904) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (21904) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;33mW (21914) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (21924) chip[DL]: WiFi station state change: Connecting_Failed -> NotConnected[0m
+[0;33mW (21934) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (21944) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (21944) chip[DL]: Next WiFi station reconnect in 100 ms[0m
+[0;32mI (21954) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;33mW (22054) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (22054) chip[DL]: Attempting to connect WiFi station interface[0m
+[0;32mI (22054) chip[DL]: WiFi station state change: NotConnected -> Connecting[0m
+[0;33mW (22064) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (22064) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (22074) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;32mI (22864) temp_ctrl: T=309.10°C → power=0.0% (target=30.0)[0m
+[0;32mI (23864) temp_ctrl: T=309.13°C → power=0.0% (target=30.0)[0m
+[0;32mI (24464) chip[DL]: Posting ESPSystemEvent: Wifi Event with eventId : 5[0m
+[0;32mI (24464) chip[DL]: WIFI_EVENT_STA_DISCONNECTED[0m
+[0;32mI (24464) chip[DL]: WiFi station state change: Connecting -> Connecting_Failed[0m
+[0;33mW (24474) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (24474) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;33mW (24484) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (24484) chip[DL]: WiFi station state change: Connecting_Failed -> NotConnected[0m
+[0;33mW (24494) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (24504) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (24514) chip[DL]: Next WiFi station reconnect in 100 ms[0m
+[0;32mI (24524) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;33mW (24624) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (24624) chip[DL]: Attempting to connect WiFi station interface[0m
+[0;32mI (24624) chip[DL]: WiFi station state change: NotConnected -> Connecting[0m
+[0;33mW (24634) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (24634) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (24644) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;32mI (24864) temp_ctrl: T=309.13°C → power=0.0% (target=30.0)[0m
+[0;32mI (25864) temp_ctrl: T=309.10°C → power=0.0% (target=30.0)[0m
+[0;32mI (26864) temp_ctrl: T=309.13°C → power=0.0% (target=30.0)[0m
+[0;32mI (27024) chip[DL]: Posting ESPSystemEvent: Wifi Event with eventId : 5[0m
+[0;32mI (27034) chip[DL]: WIFI_EVENT_STA_DISCONNECTED[0m
+[0;32mI (27034) chip[DL]: WiFi station state change: Connecting -> Connecting_Failed[0m
+[0;33mW (27044) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (27044) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;33mW (27054) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (27064) chip[DL]: WiFi station state change: Connecting_Failed -> NotConnected[0m
+[0;33mW (27064) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (27074) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (27074) chip[DL]: Next WiFi station reconnect in 100 ms[0m
+[0;32mI (27084) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;33mW (27184) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (27184) chip[DL]: Attempting to connect WiFi station interface[0m
+[0;32mI (27194) chip[DL]: WiFi station state change: NotConnected -> Connecting[0m
+[0;33mW (27204) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (27204) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (27214) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;32mI (27864) temp_ctrl: T=309.13°C → power=0.0% (target=30.0)[0m
+[0;32mI (28864) temp_ctrl: T=309.13°C → power=0.0% (target=30.0)[0m
+[0;32mI (29594) chip[DL]: Posting ESPSystemEvent: Wifi Event with eventId : 5[0m
+[0;32mI (29594) chip[DL]: WIFI_EVENT_STA_DISCONNECTED[0m
+[0;32mI (29594) chip[DL]: WiFi station state change: Connecting -> Connecting_Failed[0m
+[0;33mW (29614) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (29614) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;33mW (29624) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (29624) chip[DL]: WiFi station state change: Connecting_Failed -> NotConnected[0m
+[0;33mW (29634) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (29644) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (29644) chip[DL]: Next WiFi station reconnect in 100 ms[0m
+[0;32mI (29654) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;33mW (29754) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (29754) chip[DL]: Attempting to connect WiFi station interface[0m
+[0;32mI (29754) chip[DL]: WiFi station state change: NotConnected -> Connecting[0m
+[0;33mW (29774) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (29774) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (29784) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;32mI (29864) temp_ctrl: T=309.13°C → power=0.0% (target=30.0)[0m
+[0;32mI (30864) temp_ctrl: T=308.71°C → power=0.0% (target=30.0)[0m
+[0;32mI (31864) temp_ctrl: T=308.71°C → power=0.0% (target=30.0)[0m
+[0;32mI (32164) chip[DL]: Posting ESPSystemEvent: Wifi Event with eventId : 5[0m
+[0;32mI (32164) chip[DL]: WIFI_EVENT_STA_DISCONNECTED[0m
+[0;32mI (32164) chip[DL]: WiFi station state change: Connecting -> Connecting_Failed[0m
+[0;33mW (32174) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (32174) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;33mW (32194) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (32204) chip[DL]: WiFi station state change: Connecting_Failed -> NotConnected[0m
+[0;33mW (32204) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (32214) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (32214) chip[DL]: Next WiFi station reconnect in 100 ms[0m
+[0;32mI (32224) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;33mW (32324) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (32324) chip[DL]: Attempting to connect WiFi station interface[0m
+[0;32mI (32324) chip[DL]: WiFi station state change: NotConnected -> Connecting[0m
+[0;33mW (32334) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (32334) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (32354) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;32mI (32864) temp_ctrl: T=309.10°C → power=0.0% (target=30.0)[0m
+[0;32mI (33864) temp_ctrl: T=309.13°C → power=0.0% (target=30.0)[0m
+[0;32mI (34734) chip[DL]: Posting ESPSystemEvent: Wifi Event with eventId : 5[0m
+[0;32mI (34734) chip[DL]: WIFI_EVENT_STA_DISCONNECTED[0m
+[0;32mI (34734) chip[DL]: WiFi station state change: Connecting -> Connecting_Failed[0m
+[0;33mW (34744) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (34744) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;33mW (34754) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (34764) chip[DL]: WiFi station state change: Connecting_Failed -> NotConnected[0m
+[0;33mW (34774) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (34784) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (34784) chip[DL]: Next WiFi station reconnect in 100 ms[0m
+[0;32mI (34794) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;32mI (34864) temp_ctrl: T=308.73°C → power=0.0% (target=30.0)[0m
+[0;33mW (34894) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (34894) chip[DL]: Attempting to connect WiFi station interface[0m
+[0;32mI (34894) chip[DL]: WiFi station state change: NotConnected -> Connecting[0m
+[0;33mW (34904) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (34904) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (34914) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;32mI (35864) temp_ctrl: T=309.13°C → power=0.0% (target=30.0)[0m
+[0;32mI (36864) temp_ctrl: T=309.13°C → power=0.0% (target=30.0)[0m
+[0;32mI (37304) chip[DL]: Posting ESPSystemEvent: Wifi Event with eventId : 5[0m
+[0;32mI (37304) chip[DL]: WIFI_EVENT_STA_DISCONNECTED[0m
+[0;32mI (37304) chip[DL]: WiFi station state change: Connecting -> Connecting_Failed[0m
+[0;33mW (37314) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (37314) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;33mW (37324) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (37334) chip[DL]: WiFi station state change: Connecting_Failed -> NotConnected[0m
+[0;33mW (37334) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (37344) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (37354) chip[DL]: Next WiFi station reconnect in 100 ms[0m
+[0;32mI (37364) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;33mW (37464) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (37464) chip[DL]: Attempting to connect WiFi station interface[0m
+[0;32mI (37464) chip[DL]: WiFi station state change: NotConnected -> Connecting[0m
+[0;33mW (37474) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (37474) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (37484) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;32mI (37864) temp_ctrl: T=309.13°C → power=0.0% (target=30.0)[0m
+[0;32mI (38864) temp_ctrl: T=308.71°C → power=0.0% (target=30.0)[0m
+[0;32mI (39864) temp_ctrl: T=309.10°C → power=0.0% (target=30.0)[0m
+[0;32mI (39864) chip[DL]: Posting ESPSystemEvent: Wifi Event with eventId : 5[0m
+[0;32mI (39874) chip[DL]: WIFI_EVENT_STA_DISCONNECTED[0m
+[0;32mI (39874) chip[DL]: WiFi station state change: Connecting -> Connecting_Failed[0m
+[0;33mW (39884) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (39884) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;33mW (39894) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (39894) chip[DL]: WiFi station state change: Connecting_Failed -> NotConnected[0m
+[0;33mW (39904) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (39914) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (39914) chip[DL]: Next WiFi station reconnect in 100 ms[0m
+[0;32mI (39924) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;33mW (40024) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (40024) chip[DL]: Attempting to connect WiFi station interface[0m
+[0;32mI (40034) chip[DL]: WiFi station state change: NotConnected -> Connecting[0m
+[0;33mW (40044) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (40044) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (40054) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;32mI (40864) temp_ctrl: T=308.71°C → power=0.0% (target=30.0)[0m
+[0;32mI (41864) temp_ctrl: T=308.73°C → power=0.0% (target=30.0)[0m
+[0;32mI (42434) chip[DL]: Posting ESPSystemEvent: Wifi Event with eventId : 5[0m
+[0;32mI (42434) chip[DL]: WIFI_EVENT_STA_DISCONNECTED[0m
+[0;32mI (42434) chip[DL]: WiFi station state change: Connecting -> Connecting_Failed[0m
+[0;33mW (42454) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (42454) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;33mW (42464) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (42464) chip[DL]: WiFi station state change: Connecting_Failed -> NotConnected[0m
+[0;33mW (42474) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (42484) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (42484) chip[DL]: Next WiFi station reconnect in 100 ms[0m
+[0;32mI (42494) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;33mW (42594) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (42594) chip[DL]: Attempting to connect WiFi station interface[0m
+[0;32mI (42594) chip[DL]: WiFi station state change: NotConnected -> Connecting[0m
+[0;33mW (42614) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (42614) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (42624) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;32mI (42864) temp_ctrl: T=308.71°C → power=0.0% (target=30.0)[0m
+[0;32mI (43864) temp_ctrl: T=308.33°C → power=0.0% (target=30.0)[0m
+[0;32mI (44864) temp_ctrl: T=308.31°C → power=0.0% (target=30.0)[0m
+[0;32mI (45004) chip[DL]: Posting ESPSystemEvent: Wifi Event with eventId : 5[0m
+[0;32mI (45004) chip[DL]: WIFI_EVENT_STA_DISCONNECTED[0m
+[0;32mI (45004) chip[DL]: WiFi station state change: Connecting -> Connecting_Failed[0m
+[0;33mW (45014) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (45014) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;33mW (45034) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (45034) chip[DL]: WiFi station state change: Connecting_Failed -> NotConnected[0m
+[0;33mW (45044) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (45054) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (45054) chip[DL]: Next WiFi station reconnect in 100 ms[0m
+[0;32mI (45064) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;33mW (45164) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (45164) chip[DL]: Attempting to connect WiFi station interface[0m
+[0;32mI (45164) chip[DL]: WiFi station state change: NotConnected -> Connecting[0m
+[0;33mW (45174) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (45174) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (45194) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;32mI (45864) temp_ctrl: T=308.31°C → power=0.0% (target=30.0)[0m
+[0;32mI (46864) temp_ctrl: T=308.71°C → power=0.0% (target=30.0)[0m
+[0;32mI (47574) chip[DL]: Posting ESPSystemEvent: Wifi Event with eventId : 5[0m
+[0;32mI (47574) chip[DL]: WIFI_EVENT_STA_DISCONNECTED[0m
+[0;32mI (47574) chip[DL]: WiFi station state change: Connecting -> Connecting_Failed[0m
+[0;33mW (47584) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (47584) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;33mW (47594) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (47604) chip[DL]: WiFi station state change: Connecting_Failed -> NotConnected[0m
+[0;33mW (47614) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (47624) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (47624) chip[DL]: Next WiFi station reconnect in 100 ms[0m
+[0;32mI (47634) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;33mW (47734) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (47734) chip[DL]: Attempting to connect WiFi station interface[0m
+[0;32mI (47734) chip[DL]: WiFi station state change: NotConnected -> Connecting[0m
+[0;33mW (47744) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (47744) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (47754) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;32mI (47864) temp_ctrl: T=308.73°C → power=0.0% (target=30.0)[0m
+[0;32mI (48864) temp_ctrl: T=308.31°C → power=0.0% (target=30.0)[0m
+[0;32mI (49864) temp_ctrl: T=308.31°C → power=0.0% (target=30.0)[0m
+[0;32mI (50144) chip[DL]: Posting ESPSystemEvent: Wifi Event with eventId : 5[0m
+[0;32mI (50144) chip[DL]: WIFI_EVENT_STA_DISCONNECTED[0m
+[0;32mI (50144) chip[DL]: WiFi station state change: Connecting -> Connecting_Failed[0m
+[0;33mW (50154) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (50154) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;33mW (50164) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (50164) chip[DL]: WiFi station state change: Connecting_Failed -> NotConnected[0m
+[0;33mW (50174) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (50184) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (50194) chip[DL]: Next WiFi station reconnect in 100 ms[0m
+[0;32mI (50204) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;33mW (50304) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (50304) chip[DL]: Attempting to connect WiFi station interface[0m
+[0;32mI (50304) chip[DL]: WiFi station state change: NotConnected -> Connecting[0m
+[0;33mW (50314) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (50314) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (50324) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;32mI (50864) temp_ctrl: T=308.31°C → power=0.0% (target=30.0)[0m
+[0;32mI (51864) temp_ctrl: T=308.31°C → power=0.0% (target=30.0)[0m
+[0;32mI (52704) chip[DL]: Posting ESPSystemEvent: Wifi Event with eventId : 5[0m
+[0;32mI (52714) chip[DL]: WIFI_EVENT_STA_DISCONNECTED[0m
+[0;32mI (52714) chip[DL]: WiFi station state change: Connecting -> Connecting_Failed[0m
+[0;33mW (52724) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (52724) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;33mW (52734) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (52734) chip[DL]: WiFi station state change: Connecting_Failed -> NotConnected[0m
+[0;33mW (52744) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (52754) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (52754) chip[DL]: Next WiFi station reconnect in 100 ms[0m
+[0;32mI (52764) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;32mI (52864) temp_ctrl: T=308.31°C → power=0.0% (target=30.0)[0m
+[0;33mW (52864) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (52874) chip[DL]: Attempting to connect WiFi station interface[0m
+[0;32mI (52874) chip[DL]: WiFi station state change: NotConnected -> Connecting[0m
+[0;33mW (52884) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (52884) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (52894) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;32mI (53864) temp_ctrl: T=308.71°C → power=0.0% (target=30.0)[0m
+[0;32mI (54864) temp_ctrl: T=308.71°C → power=0.0% (target=30.0)[0m
+[0;32mI (55274) chip[DL]: Posting ESPSystemEvent: Wifi Event with eventId : 5[0m
+[0;32mI (55274) chip[DL]: WIFI_EVENT_STA_DISCONNECTED[0m
+[0;32mI (55274) chip[DL]: WiFi station state change: Connecting -> Connecting_Failed[0m
+[0;33mW (55284) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (55294) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;33mW (55304) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (55314) chip[DL]: WiFi station state change: Connecting_Failed -> NotConnected[0m
+[0;33mW (55314) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (55324) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (55324) chip[DL]: Next WiFi station reconnect in 100 ms[0m
+[0;32mI (55334) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;33mW (55434) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (55434) chip[DL]: Attempting to connect WiFi station interface[0m
+[0;32mI (55434) chip[DL]: WiFi station state change: NotConnected -> Connecting[0m
+[0;33mW (55454) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (55454) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (55464) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;32mI (55864) temp_ctrl: T=308.71°C → power=0.0% (target=30.0)[0m
+[0;32mI (56864) temp_ctrl: T=308.71°C → power=0.0% (target=30.0)[0m
+[0;32mI (57844) chip[DL]: Posting ESPSystemEvent: Wifi Event with eventId : 5[0m
+[0;32mI (57844) chip[DL]: WIFI_EVENT_STA_DISCONNECTED[0m
+[0;32mI (57844) chip[DL]: WiFi station state change: Connecting -> Connecting_Failed[0m
+[0;33mW (57854) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (57854) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (57864) temp_ctrl: T=308.71°C → power=0.0% (target=30.0)[0m
+[0;33mW (57874) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (57884) chip[DL]: WiFi station state change: Connecting_Failed -> NotConnected[0m
+[0;33mW (57894) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (57894) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (57904) chip[DL]: Next WiFi station reconnect in 100 ms[0m
+[0;32mI (57904) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;33mW (58004) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (58004) chip[DL]: Attempting to connect WiFi station interface[0m
+[0;32mI (58004) chip[DL]: WiFi station state change: NotConnected -> Connecting[0m
+[0;33mW (58014) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (58014) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (58034) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;32mI (58884) temp_ctrl: T=308.71°C → power=0.0% (target=30.0)[0m
+[0;32mI (59884) temp_ctrl: T=308.71°C → power=0.0% (target=30.0)[0m
+[0;32mI (60414) chip[DL]: Posting ESPSystemEvent: Wifi Event with eventId : 5[0m
+[0;32mI (60414) chip[DL]: WIFI_EVENT_STA_DISCONNECTED[0m
+[0;32mI (60414) chip[DL]: WiFi station state change: Connecting -> Connecting_Failed[0m
+[0;33mW (60424) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (60424) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;33mW (60434) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (60434) chip[DL]: WiFi station state change: Connecting_Failed -> NotConnected[0m
+[0;33mW (60454) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (60464) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (60464) chip[DL]: Next WiFi station reconnect in 100 ms[0m
+[0;32mI (60474) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;33mW (60574) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (60574) chip[DL]: Attempting to connect WiFi station interface[0m
+[0;32mI (60574) chip[DL]: WiFi station state change: NotConnected -> Connecting[0m
+[0;33mW (60584) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (60584) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (60594) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;32mI (60884) temp_ctrl: T=308.71°C → power=0.0% (target=30.0)[0m
+[0;32mI (61884) temp_ctrl: T=308.71°C → power=0.0% (target=30.0)[0m
+[0;32mI (62884) temp_ctrl: T=308.73°C → power=0.0% (target=30.0)[0m
+[0;32mI (62984) chip[DL]: Posting ESPSystemEvent: Wifi Event with eventId : 5[0m
+[0;32mI (62984) chip[DL]: WIFI_EVENT_STA_DISCONNECTED[0m
+[0;32mI (62984) chip[DL]: WiFi station state change: Connecting -> Connecting_Failed[0m
+[0;33mW (62994) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (62994) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;33mW (63004) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (63014) chip[DL]: WiFi station state change: Connecting_Failed -> NotConnected[0m
+[0;33mW (63014) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (63024) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (63034) chip[DL]: Next WiFi station reconnect in 100 ms[0m
+[0;32mI (63044) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;33mW (63144) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (63144) chip[DL]: Attempting to connect WiFi station interface[0m
+[0;32mI (63144) chip[DL]: WiFi station state change: NotConnected -> Connecting[0m
+[0;33mW (63154) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (63154) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (63164) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;32mI (63884) temp_ctrl: T=308.33°C → power=0.0% (target=30.0)[0m
+[0;32mI (64884) temp_ctrl: T=308.33°C → power=0.0% (target=30.0)[0m
+[0;32mI (65544) chip[DL]: Posting ESPSystemEvent: Wifi Event with eventId : 5[0m
+[0;32mI (65554) chip[DL]: WIFI_EVENT_STA_DISCONNECTED[0m
+[0;32mI (65554) chip[DL]: WiFi station state change: Connecting -> Connecting_Failed[0m
+[0;33mW (65564) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (65564) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;33mW (65574) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (65574) chip[DL]: WiFi station state change: Connecting_Failed -> NotConnected[0m
+[0;33mW (65584) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (65594) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (65594) chip[DL]: Next WiFi station reconnect in 100 ms[0m
+[0;32mI (65604) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;33mW (65704) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (65714) chip[DL]: Attempting to connect WiFi station interface[0m
+[0;32mI (65714) chip[DL]: WiFi station state change: NotConnected -> Connecting[0m
+[0;33mW (65724) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (65724) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (65734) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;32mI (65884) temp_ctrl: T=308.31°C → power=0.0% (target=30.0)[0m
+[0;32mI (66884) temp_ctrl: T=308.31°C → power=0.0% (target=30.0)[0m
+[0;32mI (67884) temp_ctrl: T=308.71°C → power=0.0% (target=30.0)[0m
+[0;32mI (68114) chip[DL]: Posting ESPSystemEvent: Wifi Event with eventId : 5[0m
+[0;32mI (68114) chip[DL]: WIFI_EVENT_STA_DISCONNECTED[0m
+[0;32mI (68114) chip[DL]: WiFi station state change: Connecting -> Connecting_Failed[0m
+[0;33mW (68124) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (68134) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;33mW (68144) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (68144) chip[DL]: WiFi station state change: Connecting_Failed -> NotConnected[0m
+[0;33mW (68154) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (68164) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (68164) chip[DL]: Next WiFi station reconnect in 100 ms[0m
+[0;32mI (68174) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;33mW (68274) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (68274) chip[DL]: Attempting to connect WiFi station interface[0m
+[0;32mI (68274) chip[DL]: WiFi station state change: NotConnected -> Connecting[0m
+[0;33mW (68294) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (68294) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (68304) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;32mI (68884) temp_ctrl: T=308.73°C → power=0.0% (target=30.0)[0m
+[0;32mI (69884) temp_ctrl: T=308.73°C → power=0.0% (target=30.0)[0m
+[0;32mI (70684) chip[DL]: Posting ESPSystemEvent: Wifi Event with eventId : 5[0m
+[0;32mI (70684) chip[DL]: WIFI_EVENT_STA_DISCONNECTED[0m
+[0;32mI (70684) chip[DL]: WiFi station state change: Connecting -> Connecting_Failed[0m
+[0;33mW (70694) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (70694) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;33mW (70714) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (70724) chip[DL]: WiFi station state change: Connecting_Failed -> NotConnected[0m
+[0;33mW (70724) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (70734) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (70734) chip[DL]: Next WiFi station reconnect in 100 ms[0m
+[0;32mI (70744) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;33mW (70844) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (70844) chip[DL]: Attempting to connect WiFi station interface[0m
+[0;32mI (70844) chip[DL]: WiFi station state change: NotConnected -> Connecting[0m
+[0;33mW (70854) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (70854) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (70874) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;32mI (70884) temp_ctrl: T=308.73°C → power=0.0% (target=30.0)[0m
+[0;32mI (71884) temp_ctrl: T=308.71°C → power=0.0% (target=30.0)[0m
+[0;32mI (72884) temp_ctrl: T=308.73°C → power=0.0% (target=30.0)[0m
+[0;32mI (73254) chip[DL]: Posting ESPSystemEvent: Wifi Event with eventId : 5[0m
+[0;32mI (73254) chip[DL]: WIFI_EVENT_STA_DISCONNECTED[0m
+[0;32mI (73254) chip[DL]: WiFi station state change: Connecting -> Connecting_Failed[0m
+[0;33mW (73264) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (73264) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;33mW (73274) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (73274) chip[DL]: WiFi station state change: Connecting_Failed -> NotConnected[0m
+[0;33mW (73294) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (73304) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (73304) chip[DL]: Next WiFi station reconnect in 100 ms[0m
+[0;32mI (73314) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;33mW (73414) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (73414) chip[DL]: Attempting to connect WiFi station interface[0m
+[0;32mI (73414) chip[DL]: WiFi station state change: NotConnected -> Connecting[0m
+[0;33mW (73424) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (73424) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (73434) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;32mI (73884) temp_ctrl: T=308.73°C → power=0.0% (target=30.0)[0m
+[0;32mI (74884) temp_ctrl: T=308.71°C → power=0.0% (target=30.0)[0m
+[0;32mI (75824) chip[DL]: Posting ESPSystemEvent: Wifi Event with eventId : 5[0m
+[0;32mI (75824) chip[DL]: WIFI_EVENT_STA_DISCONNECTED[0m
+[0;32mI (75824) chip[DL]: WiFi station state change: Connecting -> Connecting_Failed[0m
+[0;33mW (75834) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (75834) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;33mW (75844) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (75844) chip[DL]: WiFi station state change: Connecting_Failed -> NotConnected[0m
+[0;33mW (75854) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (75854) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (75874) chip[DL]: Next WiFi station reconnect in 100 ms[0m
+[0;32mI (75884) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;32mI (75884) temp_ctrl: T=308.33°C → power=0.0% (target=30.0)[0m
+[0;33mW (75984) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (75984) chip[DL]: Attempting to connect WiFi station interface[0m
+[0;32mI (75984) chip[DL]: WiFi station state change: NotConnected -> Connecting[0m
+[0;33mW (75994) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (75994) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+[0;32mI (76004) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;32mI (76894) temp_ctrl: T=308.71°C → power=0.0% (target=30.0)[0m

@@ -1,0 +1,7 @@
+defines = -DNDEBUG
+framework_dirs =
+include_dirs =
+target_output_name = app_config
+
+
+build phony/third_party/connectedhomeip/src/app/app_config: phony || phony/third_party/connectedhomeip/src/app/app_buildconfig

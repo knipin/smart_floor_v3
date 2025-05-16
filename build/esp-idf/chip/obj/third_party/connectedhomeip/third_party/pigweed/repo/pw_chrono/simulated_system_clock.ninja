@@ -1,0 +1,8 @@
+defines = -DNDEBUG
+framework_dirs =
+include_dirs = -I../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_chrono/public -I../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_preprocessor/public -I../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_polyfill/public -I../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_sync/public
+target_output_name = simulated_system_clock
+
+build phony/third_party/connectedhomeip/third_party/pigweed/repo/pw_chrono/simulated_system_clock.inputdeps: phony phony/third_party/connectedhomeip/third_party/pigweed/repo/pw_chrono/system_clock.NO_BACKEND_SET phony/third_party/connectedhomeip/third_party/pigweed/repo/pw_sync/interrupt_spin_lock.NO_BACKEND_SET
+
+build phony/third_party/connectedhomeip/third_party/pigweed/repo/pw_chrono/simulated_system_clock: phony || phony/third_party/connectedhomeip/third_party/pigweed/repo/pw_chrono/system_clock phony/third_party/connectedhomeip/third_party/pigweed/repo/pw_sync/interrupt_spin_lock

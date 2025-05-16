@@ -1,0 +1,1 @@
+cmd='/home/knipin/esp/esp-matter/connectedhomeip/connectedhomeip/.environment/cipd/packages/pigweed/gn;--root=/home/knipin/esp/esp-matter/connectedhomeip/connectedhomeip/config/esp32;gen;--check;--fail-on-unused-args;/home/knipin/esp/esp-matter/examples/smart_floor_v3/build/esp-idf/chip'

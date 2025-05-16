@@ -1,0 +1,11 @@
+[
+  "/home/knipin/esp/esp-matter/examples/smart_floor_v3/build/esp-idf/chip/=out/",
+  "/home/knipin/esp/esp-matter/examples/smart_floor_v3/build/esp-idf/chip=",
+  "/home/knipin/esp/esp-matter/connectedhomeip/connectedhomeip/config/esp32/=",
+  "../../../../../connectedhomeip/connectedhomeip/config/esp32/=",
+  "=out/",
+  "../../../../../connectedhomeip/connectedhomeip/config/esp32/=",
+  "/home/knipin/esp/esp-matter/connectedhomeip/connectedhomeip/config/esp32/=",
+  "/home/knipin/esp/esp-matter/examples/smart_floor_v3/build/esp-idf/chip=",
+  "/home/knipin/esp/esp-matter/examples/smart_floor_v3/build/esp-idf/chip/=out/"
+]

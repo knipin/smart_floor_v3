@@ -1,0 +1,7 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /home/knipin/esp/esp-matter/examples/smart_floor_v3/build/bootloader/esp-idf/esptool_py && /home/knipin/.espressif/python_env/idf5.4_py3.10_env/bin/python /home/knipin/esp/esp-idf/components/partition_table/check_sizes.py --offset 0xc000 bootloader 0x0 /home/knipin/esp/esp-matter/examples/smart_floor_v3/build/bootloader/bootloader.bin
+Bootloader binary size 0x55f0 bytes. 0x6a10 bytes (55%) free.
+[2/7] Performing build step for 'chip_gn'
+ninja: no work to do.
+[3/3] cd /home/knipin/esp/esp-matter/examples/smart_floor_v3/build/esp-idf/esptool_py && /home/knipin/.espressif/python_env/idf5.4_py3.10_env/bin/python /home/knipin/esp/esp-idf/components/partition_table/check_sizes.py --offset 0xc000 partition --type app /home/knipin/esp/esp-matter/examples/smart_floor_v3/build/partition_table/partition-table.bin /home/knipin/esp/esp-matter/examples/smart_floor_v3/build/light.bin
+light.bin binary size 0x1a8680 bytes. Smallest app partition is 0x1e0000 bytes. 0x37980 bytes (12%) free.

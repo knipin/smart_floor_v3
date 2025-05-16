@@ -1,0 +1,6 @@
+defines = -DNDEBUG -DPW_SPAN_ENABLE_ASSERTS=false
+framework_dirs =
+include_dirs =
+target_output_name = span_asserts
+
+

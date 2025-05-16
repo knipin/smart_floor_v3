@@ -1,0 +1,7 @@
+defines = -DNDEBUG
+framework_dirs =
+include_dirs =
+target_output_name = icd-server-config
+
+
+build phony/third_party/connectedhomeip/src/app/icd/server/icd-server-config: phony || phony/third_party/connectedhomeip/src/app/icd/server/icd-server-buildconfig

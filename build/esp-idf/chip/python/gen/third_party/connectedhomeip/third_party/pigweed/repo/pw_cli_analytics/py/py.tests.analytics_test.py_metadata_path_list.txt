@@ -1,0 +1,3 @@
+python/gen/third_party/connectedhomeip/third_party/pigweed/repo/pw_env_setup/py/py/package_metadata.json
+python/gen/third_party/connectedhomeip/third_party/pigweed/repo/pw_config_loader/py/py/package_metadata.json
+python/gen/third_party/connectedhomeip/third_party/pigweed/repo/pw_cli_analytics/py/py/package_metadata.json
